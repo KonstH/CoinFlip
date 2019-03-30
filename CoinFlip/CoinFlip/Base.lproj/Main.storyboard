@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoinFlip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient BG" translatesAutoresizingMaskIntoConstraints="NO" id="VKN-xt-FTG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-UX-rv2">
+                                <rect key="frame" x="165" y="518" width="45" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="25"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="FLIP">
+                                    <color key="titleColor" red="0.0" green="0.077655624260563341" blue="0.77841659330985913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="FlipBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Bn-pb-7vH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Toonie Heads" translatesAutoresizingMaskIntoConstraints="NO" id="50y-5A-8np">
+                                <rect key="frame" x="111" y="98" width="153" height="142"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Toonie Tails" translatesAutoresizingMaskIntoConstraints="NO" id="mlT-c1-mhz">
+                                <rect key="frame" x="111" y="98" width="153" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="bfL-7w-z49"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li8-h4-nGY">
+                                <rect key="frame" x="121" y="346" width="133" height="42"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.07765562426" blue="0.98764854749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-PD-thK">
+                                <rect key="frame" x="137" y="346" width="101" height="42"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.07765562426" blue="0.98764854749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VKN-xt-FTG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0d6-Bx-9He"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="li8-h4-nGY" secondAttribute="trailing" constant="121" id="1w8-KH-rJk"/>
+                            <constraint firstItem="dVt-UX-rv2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="498" id="58T-bT-CSG"/>
+                            <constraint firstItem="50y-5A-8np" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="7RL-dt-hYR"/>
+                            <constraint firstAttribute="trailing" secondItem="VKN-xt-FTG" secondAttribute="trailing" id="86v-lp-ey8"/>
+                            <constraint firstItem="li8-h4-nGY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="326" id="8Yo-IH-frr"/>
+                            <constraint firstItem="VKN-xt-FTG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B54-mB-oqw"/>
+                            <constraint firstItem="ve2-PD-thK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="326" id="CSr-1n-ZHS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVt-UX-rv2" secondAttribute="trailing" constant="165" id="EI4-UI-pD7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ve2-PD-thK" secondAttribute="trailing" constant="137" id="Fas-o7-xqb"/>
+                            <constraint firstItem="dVt-UX-rv2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="GG1-Ig-yXI"/>
+                            <constraint firstItem="mlT-c1-mhz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="GY5-Tv-bkB"/>
+                            <constraint firstItem="mlT-c1-mhz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="Jo3-Fi-q1y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mlT-c1-mhz" secondAttribute="trailing" constant="111" id="N66-Nw-Ho5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="50y-5A-8np" secondAttribute="trailing" constant="111" id="O3q-yg-Yjo"/>
+                            <constraint firstItem="dVt-UX-rv2" firstAttribute="top" secondItem="mlT-c1-mhz" secondAttribute="bottom" constant="278" id="Yjz-9C-ZgT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dVt-UX-rv2" secondAttribute="bottom" constant="110" id="aQ8-lP-6f0"/>
+                            <constraint firstItem="50y-5A-8np" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="aSf-RJ-LSy"/>
+                            <constraint firstItem="ve2-PD-thK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="i4x-c7-zoI"/>
+                            <constraint firstItem="dVt-UX-rv2" firstAttribute="top" secondItem="50y-5A-8np" secondAttribute="bottom" constant="278" id="k6F-Hf-Dkc"/>
+                            <constraint firstAttribute="bottom" secondItem="VKN-xt-FTG" secondAttribute="bottom" id="lmu-iZ-4V4"/>
+                            <constraint firstItem="dVt-UX-rv2" firstAttribute="top" secondItem="li8-h4-nGY" secondAttribute="bottom" constant="130" id="pN7-Sj-w9I"/>
+                            <constraint firstItem="li8-h4-nGY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="vN7-67-iUj"/>
+                            <constraint firstItem="dVt-UX-rv2" firstAttribute="top" secondItem="ve2-PD-thK" secondAttribute="bottom" constant="130" id="wnj-KJ-V4u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="HeadsCoin" destination="50y-5A-8np" id="hW9-rw-1Ag"/>
+                        <outlet property="HeadsLbl" destination="li8-h4-nGY" id="fOv-bM-oSo"/>
+                        <outlet property="TailsCoin" destination="mlT-c1-mhz" id="oIi-uO-9lB"/>
+                        <outlet property="TailsLbl" destination="ve2-PD-thK" id="7DC-LM-99F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gradient BG" width="640" height="1136"/>
+        <image name="Toonie Heads" width="538" height="548"/>
+        <image name="Toonie Tails" width="550" height="540"/>
+    </resources>
+</document>
